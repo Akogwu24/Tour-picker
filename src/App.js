@@ -28,12 +28,12 @@ function App() {
     }
   };
 
-  useEffect(() => {
-    fetchTours();
-  }, []);
+  // useEffect(() => {
+  //   fetchTours();
+  // }, []);
 
   return (
-    <div className='container mx-auto px-5 lg:px-12 md'>
+    <div className='container mx-auto px-5 lg:px-12 text-center'>
       <h1 className='text-6xl font-bold text-center py-10'>
         Our Tour Destinations
       </h1>
@@ -52,6 +52,16 @@ function App() {
           </div>
         ))}
       </main>
+      {tours.length === 0 ? (
+        <button
+          className='bg-green-400 text-center px-10  py-3 font-bold text-2xl rounded-lg mt-5 hover:bg-green-500'
+          onClick={() => fetchTours()}
+        >
+          Reload Destinations
+        </button>
+      ) : (
+        ''
+      )}
     </div>
   );
 }

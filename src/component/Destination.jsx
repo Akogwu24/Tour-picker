@@ -15,9 +15,9 @@ const Destination = ({
       <div>
         <img src={image} alt='eiffel tower' className='rounded h-80 w-full' />
       </div>
-      <div className='flex justify-between text-lg font-bold mt-3'>
+      <div className='flex justify-between text-left text-lg font-bold mt-3'>
         <p>{destination}</p>
-        <p className='text-green-400 pl-5'>{cost}</p>
+        <p className='text-green-400 pl-6 w-1/2 flex-1'>NGN{cost}</p>
       </div>
 
       <p className='my-5 text-justify'>
