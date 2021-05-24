@@ -28,9 +28,9 @@ function App() {
     }
   };
 
-  // useEffect(() => {
-  //   fetchTours();
-  // }, []);
+  useEffect(() => {
+    fetchTours();
+  }, []);
 
   return (
     <div className='container mx-auto px-5 lg:px-12 text-center'>
